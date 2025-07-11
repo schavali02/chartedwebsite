@@ -3,7 +3,7 @@
     "apps": [],
     "details": [
       {
-        "appID": "YOUR_TEAM_ID.com.yourcompany.charted",
+        "appID": "XPHPBFNT4N.com.chartedapp.charted",
         "paths": [ "/playlist/*" ]
       }
     ]
