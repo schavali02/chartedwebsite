@@ -4,9 +4,14 @@ import type { Metadata } from "next"
 import { ThemeProvider } from "@/components/theme-provider"
 
 export const metadata: Metadata = {
-  title: "SaaSify - Streamline Your Workflow",
-  description: "Boost productivity, reduce costs, and scale your business with our all-in-one SaaS platform.",
-    generator: 'v0.dev'
+  title: "Charted: Monetize Playlists",
+  description: "Charted empowers music lovers to effortlessly create, share, and monetize playlists—bringing communities together and elevating every listening experience.",
+  generator: 'v0.dev',
+  icons: {
+    icon: '/images/charted-logo.png',
+    shortcut: '/images/charted-logo.png',
+    apple: '/images/charted-logo.png',
+  }
 }
 
 export default function RootLayout({
