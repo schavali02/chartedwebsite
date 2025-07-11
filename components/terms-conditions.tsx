@@ -4,11 +4,6 @@ import { motion } from "framer-motion"
 import { Badge } from "@/components/ui/badge"
 
 export function TermsConditions() {
-  const handleEmailClick = () => {
-    const email = "app" + "." + "charted" + "@" + "gmail" + "." + "com"
-    window.location.href = "mailto:" + email
-  }
-
   return (
     <section id="terms" className="w-full py-20 md:py-32 bg-muted/30">
       <div className="container px-4 md:px-6">
@@ -137,9 +132,9 @@ export function TermsConditions() {
                 <strong>Charted Support</strong>
                 <br />
                 Email:{" "}
-                <button onClick={handleEmailClick} className="text-primary hover:underline cursor-pointer font-medium">
+                <span className="text-primary font-medium">
                   app[dot]companyname[at]gmail[dot]com
-                </button>
+                </span>
               </p>
             </div>
           </div>

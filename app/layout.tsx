@@ -6,7 +6,6 @@ import { ThemeProvider } from "@/components/theme-provider"
 export const metadata: Metadata = {
   title: "Charted: Monetize Playlists",
   description: "Charted empowers music lovers to effortlessly create, share, and monetize playlists—bringing communities together and elevating every listening experience.",
-  generator: 'v0.dev',
   icons: {
     icon: '/images/charted-logo.png',
     shortcut: '/images/charted-logo.png',

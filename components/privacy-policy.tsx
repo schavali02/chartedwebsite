@@ -4,14 +4,6 @@ import { motion } from "framer-motion"
 import { Badge } from "@/components/ui/badge"
 
 export function PrivacyPolicy() {
-  const handleEmailClick = (emailType: string) => {
-    const emails = {
-      privacy: "privacy" + "@" + "chartedapp" + "." + "org",
-      support: "app" + "." + "charted" + "@" + "gmail" + "." + "com",
-    }
-    window.location.href = "mailto:" + emails[emailType as keyof typeof emails]
-  }
-
   return (
     <section id="privacy" className="w-full py-20 md:py-32">
       <div className="container px-4 md:px-6">
@@ -121,7 +113,9 @@ export function PrivacyPolicy() {
               <p className="text-muted-foreground">
                 Depending on your jurisdiction, you may have the right to access, correct, or delete your personal
                 information, and to object to or restrict certain processing. To exercise these rights, contact us at{" "}
-                
+                <span className="text-primary font-medium">
+                  privacy[at]chartedapp[dot]org
+                </span>
                 .
               </p>
             </div>
@@ -144,12 +138,9 @@ export function PrivacyPolicy() {
                 <strong>Charted Privacy Team</strong>
                 <br />
                 Email:{" "}
-                <button
-                  onClick={() => handleEmailClick("support")}
-                  className="text-primary hover:underline cursor-pointer font-medium"
-                >
+                <span className="text-primary font-medium">
                   app[dot]companyname[at]gmail[dot]com
-                </button>
+                </span>
               </p>
             </div>
           </div>
