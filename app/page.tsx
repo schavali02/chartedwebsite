@@ -87,10 +87,12 @@ export default function LandingPage() {
             </Link>
           </nav>
           <div className="hidden md:flex gap-4 items-center">
-            <Button className="rounded-full bg-[#1E3A8A] hover:bg-[#1E3A8A]/90 text-white">
-              Get Started
-              <ChevronRight className="ml-1 size-4" />
-            </Button>
+            <a href="https://apps.apple.com/us/app/charted-monetizing-playlists/id6748363489" target="_blank" rel="noopener noreferrer">
+              <Button className="rounded-full bg-[#1E3A8A] hover:bg-[#1E3A8A]/90 text-white">
+                Get Started
+                <ChevronRight className="ml-1 size-4" />
+              </Button>
+            </a>
           </div>
           <div className="flex items-center gap-4 md:hidden">
             <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -115,10 +117,12 @@ export default function LandingPage() {
                 Terms & Conditions
               </Link>
               <div className="flex flex-col gap-2 pt-2 border-t">
-                <Button className="rounded-full bg-[#1E3A8A] hover:bg-[#1E3A8A]/90 text-white">
-                  Get Started
-                  <ChevronRight className="ml-1 size-4" />
-                </Button>
+                <a href="https://apps.apple.com/us/app/charted-monetizing-playlists/id6748363489" target="_blank" rel="noopener noreferrer" className="w-full">
+                  <Button className="w-full rounded-full bg-[#1E3A8A] hover:bg-[#1E3A8A]/90 text-white">
+                    Get Started
+                    <ChevronRight className="ml-1 size-4" />
+                  </Button>
+                </a>
               </div>
             </div>
           </motion.div>
@@ -144,13 +148,15 @@ export default function LandingPage() {
                 together and elevating every listening experience.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button
-                  size="lg"
-                  className="rounded-full h-12 px-8 text-base bg-[#1E3A8A] hover:bg-[#1E3A8A]/90 text-white"
-                >
-                  Start Free Trial
-                  <ArrowRight className="ml-2 size-4" />
-                </Button>
+                <a href="https://apps.apple.com/us/app/charted-monetizing-playlists/id6748363489" target="_blank" rel="noopener noreferrer">
+                  <Button
+                    size="lg"
+                    className="rounded-full h-12 px-8 text-base bg-[#1E3A8A] hover:bg-[#1E3A8A]/90 text-white"
+                  >
+                    Start Free Trial
+                    <ArrowRight className="ml-2 size-4" />
+                  </Button>
+                </a>
               </div>
             </motion.div>
 
