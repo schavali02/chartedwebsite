@@ -6,8 +6,6 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import { ChevronRight, Menu, X, ArrowRight, Star, Zap, Shield, Users, BarChart, Layers } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { PrivacyPolicy } from "@/components/privacy-policy"
-import { TermsConditions } from "@/components/terms-conditions"
 
 export default function LandingPage() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -74,13 +72,13 @@ export default function LandingPage() {
           </div>
           <nav className="hidden md:flex gap-8">
             <Link
-              href="#privacy"
+              href="/privacy"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               Privacy Policy
             </Link>
             <Link
-              href="#terms"
+              href="/terms"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               Terms & Conditions
@@ -110,10 +108,10 @@ export default function LandingPage() {
             className="md:hidden absolute top-16 inset-x-0 bg-background/95 backdrop-blur-lg border-b"
           >
             <div className="container py-4 flex flex-col gap-4">
-              <Link href="#privacy" className="py-2 text-sm font-medium" onClick={() => setMobileMenuOpen(false)}>
+              <Link href="/privacy" className="py-2 text-sm font-medium" onClick={() => setMobileMenuOpen(false)}>
                 Privacy Policy
               </Link>
-              <Link href="#terms" className="py-2 text-sm font-medium" onClick={() => setMobileMenuOpen(false)}>
+              <Link href="/terms" className="py-2 text-sm font-medium" onClick={() => setMobileMenuOpen(false)}>
                 Terms & Conditions
               </Link>
               <div className="flex flex-col gap-2 pt-2 border-t">
@@ -249,12 +247,6 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* Privacy Policy Section */}
-        <PrivacyPolicy />
-
-        {/* Terms & Conditions Section */}
-        <TermsConditions />
-
         {/* CTA Section */}
         <section className="w-full py-20 md:py-32 bg-gradient-to-br from-[#1E3A8A] to-[#1E3A8A]/80 text-primary-foreground relative overflow-hidden">
           <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
@@ -333,12 +325,12 @@ export default function LandingPage() {
               <h4 className="text-sm font-bold">Product</h4>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <Link href="#privacy" className="text-muted-foreground hover:text-foreground transition-colors">
+                  <Link href="/privacy" className="text-muted-foreground hover:text-foreground transition-colors">
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link href="#terms" className="text-muted-foreground hover:text-foreground transition-colors">
+                  <Link href="/terms" className="text-muted-foreground hover:text-foreground transition-colors">
                     Terms & Conditions
                   </Link>
                 </li>
